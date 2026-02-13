@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Diary 💌</title>
+
+<!-- Link CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="overlay"></div>
+
+<!-- Music -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/watch?v=eaYqWNF1noM&list=RDeaYqWNF1noM&start_radio=1"
+allow="autoplay">
+</iframe>
+
+<!-- VALENTINE QUESTION SCREEN -->
+<div class="screen" id="questionScreen">
+    <h1 class="glowTitle">My Secret Diary 💌</h1>
+    <p class="questionText">
+        Joan Mayla…<br><br>
+        Will you be my Valentine?
+    </p>
+    <div>
+        <button onclick="answerYes()">Yes ❤️</button>
+        <button onclick="answerNo()">No 🙈</button>
+    </div>
+</div>
+
+<!-- STORY SCREEN -->
+<div class="screen" id="storyScreen" style="display:none;">
+    <div class="message" id="message"></div>
+</div>
+
+<!-- FINAL SCENE -->
+<div class="screen" id="finalScreen" style="display:none;">
+    <h1>Our Secret Story 🌸</h1>
+    <div id="storyText"></div>
+    <div class="toBeContinued" id="continued">To Be Continued… 💕</div>
+</div>
+
+<!-- Link JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
